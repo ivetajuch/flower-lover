@@ -5,6 +5,12 @@ addFlowerButton.addEventListener('click', () => {
     const flowerLocation = document.getElementById("location").value;
     const flowerDescription = document.getElementById("description").value;
     const flowerImage = document.getElementById("photo_url").value;
+   
+    if (!flowerName || !flowerPrice || !flowerLocation || !flowerDescription || !flowerImage) {
+        const messageElement = document.getElementById("validation-msg");
+        messageElement.innerHTML = "Please fill out all fields.";
+        return;
+    }
 
     const newFlower = {
     name:flowerName,

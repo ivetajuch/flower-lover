@@ -293,10 +293,12 @@ border-color: #ff9999;
     height: auto;
 }
 
-.success-msg {
+.success-msg,
+.validation-msg {
     color: #ce5e5e;
     font-size: 36px;
 }
+
 
 
 
